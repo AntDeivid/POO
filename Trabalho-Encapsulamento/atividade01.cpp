@@ -149,6 +149,4 @@ int main() {
     tec->imprimir();
     alu->imprimir();
 
-    return 0;
-
 }
