@@ -88,21 +88,17 @@ NumeroRacional NumeroRacional::operator / (NumeroRacional aux){
 
 }
 
-NumeroRacional NumeroRacional::operator <= (NumeroRacional aux){
+bool NumeroRacional::operator <= (NumeroRacional aux){
 
-    NumeroRacional auxiliar = NumeroRacional(this->getNumerador(), this->getDenominador());
-
-    if ((this->numerador / this->denominador) <= (aux.numerador / aux.denominador)) { return auxiliar; }
-    else { return aux; }
+    if ((this->numerador / this->denominador) <= (aux.numerador / aux.denominador)) { return true; }
+    else { return false; }
 
 }
 
-NumeroRacional NumeroRacional::operator >= (NumeroRacional aux){
+bool NumeroRacional::operator >= (NumeroRacional aux){
 
-    NumeroRacional auxiliar = NumeroRacional(this->getNumerador(), this->getDenominador());
-
-    if ((this->numerador / this->denominador) >= (aux.numerador / aux.denominador)) { return auxiliar; }
-    else { return aux; }
+    if ((this->numerador / this->denominador) >= (aux.numerador / aux.denominador)) { return true; }
+    else { return false; }
 
 }
 

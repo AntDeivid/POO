@@ -18,4 +18,6 @@ int main() {
 
     num3.print();
 
+    return 0;
+
 }   

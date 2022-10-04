@@ -21,8 +21,8 @@ class NumeroRacional {
         NumeroRacional operator-(NumeroRacional aux);
         NumeroRacional operator*(NumeroRacional aux);
         NumeroRacional operator/(NumeroRacional aux);
-        NumeroRacional operator<=(NumeroRacional aux);
-        NumeroRacional operator>=(NumeroRacional aux);
+        bool operator<=(NumeroRacional aux);
+        bool operator>=(NumeroRacional aux);
         bool operator==(NumeroRacional aux);
         bool operator!=(NumeroRacional aux);
 
