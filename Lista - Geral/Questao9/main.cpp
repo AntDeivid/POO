@@ -15,8 +15,28 @@ int main() {
     NumeroRacional num3;
 
     num3 = num1 + num2;
-
     num3.print();
+
+    num3 = num1 - num2;
+    num3.print();
+
+    num3 = num1 * num2;
+    num3.print();
+
+    num3 = num1 / num2;
+    num3.print();
+
+    if (num3 >= num1) {cout << "Sim" << endl; }
+    else { cout << "Nao" << endl; }
+
+    if (num3 <= num1) { cout << "Sim" << endl; }
+    else { cout << "Nao" << endl; }
+
+    if (num3 == num1) { cout << "Sim" << endl; }
+    else { cout << "Nao" << endl; }
+
+    if (num3!= num1) { cout << "Sim" << endl; }
+    else { cout << "Nao" << endl; }
 
     return 0;
 
