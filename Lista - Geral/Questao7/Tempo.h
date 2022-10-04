@@ -23,7 +23,7 @@ class Tempo {
         void print();
 
         void subtrair(Tempo *tempo);
-        void somar(Tempo *tempo);
-        Tempo somar(Tempo *tempo1, Tempo *tempo2);
+        void somar(int horas, int minutos, int segundos);
+        Tempo somar(Tempo *tempo);
 
 };

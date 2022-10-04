@@ -63,11 +63,11 @@ void Tempo::subtrair(Tempo *tempo) {
 
 }
 
-void Tempo::somar(Tempo *tempo) {
+void Tempo::somar(int horas, int minutos, int segundos) {
 
-    this->horas = this->horas + tempo->horas;
-    this->minutos = this->minutos + tempo->minutos;
-    this->segundos = this->segundos + tempo->segundos;
+    this->horas = this->horas + horas;
+    this->minutos = this->minutos + minutos;
+    this->segundos = this->segundos + segundos;
 
     if (this->horas == 24) {this->horas = 0;}
     else if (this->horas > 24) {this->horas = this->horas % 24;}
@@ -78,13 +78,11 @@ void Tempo::somar(Tempo *tempo) {
 
 }
 
-Tempo Tempo::somar(Tempo *tempo1, Tempo *tempo2) {
+Tempo Tempo::somar(Tempo *tempo) {
 
-    Tempo *tempoResultado = new Tempo();
-
-    this->setHoras(tempo1->horas + tempo2->horas);
-    this->setMinutos(tempo1->minutos + tempo2->minutos);
-    this->setSegundos(tempo1->segundos + tempo2->segundos);
+    tempo->setHoras(tempo->horas + this->horas);
+    tempo->setMinutos(tempo->minutos + this->minutos);
+    tempo->setSegundos(tempo->segundos + this->segundos);
 
     if (this->horas == 24) {this->horas = 0;}
     else if (this->horas > 24) {this->horas = this->horas % 24;}
@@ -93,6 +91,6 @@ Tempo Tempo::somar(Tempo *tempo1, Tempo *tempo2) {
 
     if (this->segundos > 60) {this->segundos = this->segundos % 60;}
 
-    return *tempoResultado;
+    return *tempo;
 
 }

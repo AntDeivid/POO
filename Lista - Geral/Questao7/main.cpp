@@ -14,14 +14,11 @@ int main() {
 
     tempo1->print();
 
-    tempo1->somar(tempo2);
+    tempo1->somar(tempo2->getHoras(), tempo2->getMinutos(), tempo2->getSegundos());
 
     tempo1->print();
 
-    Tempo *tempo3 = tempo3->somar(tempo1, tempo2);
-    //consertar essa função
-
-    tempo3->print();
+    tempo1->somar(tempo2);
 
     return 0;
 
